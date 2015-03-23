@@ -1,0 +1,148 @@
+* {
+	font-size: 62,5%;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	/*border: 2px solid red;*/
+}
+body {
+	background-image: url('../images/apple.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: scroll;
+}
+
+.app_background {
+	text-align: center;
+
+}
+
+h1 {
+	font-family: sans-serif;
+	text-align: center;
+	font-size: 5em;
+	font-weight: 100;
+	color: #fff;
+	margin-top: 0.75em;
+  text-shadow: 2px 2px #003767;
+}
+
+.int_text {
+	background-color: #fff;
+	opacity: 0.7;
+	margin: 10em auto 0 auto;
+	padding: 1em;
+	width: 90%;
+	text-align: center;
+	border-radius: 0.3em;
+	display: ;
+}
+
+p {
+	padding: 0 2em;
+	line-height: 150%;
+	font-size: 1.2em;
+	text-align: center;
+	margin: auto;
+}
+
+.above_btn {
+	margin: 2em auto 0 auto;
+	color: #fff;
+	font-weight: 100;
+	font-family: 'Helvetica'; 
+}
+
+
+#start { 
+	padding: 0.7em;
+	border-radius: 0.4em;
+	border-style: none;
+  margin-top: 0.5em;
+	color: #fff;
+	background-color: #003767;
+	width: 10em;
+	font-size: 1.2em;
+	margin-bottom: 2em;
+	cursor: pointer;
+}
+
+footer {
+  font-size: 0.9em;
+  margin: 0 auto;
+}
+
+.copyright {
+	font-family: sans-serif;
+	color: white;
+	text-align: center;
+}
+
+.thinkful {
+	text-decoration: none;
+	color: #01B0F0;
+}
+
+.me {
+	color: pink;
+	font-weight: 200;
+}
+
+.work_area {
+	background-color: #fff;
+	opacity: 0.9;
+	margin: 3.5em auto;
+	padding: 0.5em;
+	width: 75%;
+	text-align: center;
+	border-radius: 0.3em;
+	display: none;
+}
+
+.question_title {
+	font-size: 2em;
+	font-weight: 300;
+	margin: .5em auto;
+}
+
+.option {
+	margin-top: 2em;
+	margin-right: 1em;
+	width: 2em;
+	height: 2em;
+}
+.answers li {
+	font-size: 1.4em;
+	font-family: Verdana;
+	font-weight: 400;
+	padding: 0.5em;
+}
+
+.user_feedback {
+ 	margin: 0em auto;
+  text-align: center;
+  display: none;
+}
+
+.correct {
+	color: blue;
+	font-size: 1em;
+}
+.next {
+	text-align: center;
+	padding: 0.5em;
+	cursor: pointer;
+	display: block;
+}
+.next p {
+	background-color: #D99AD5;
+	width: 6em;
+	border-radius: 1em;
+	
+}
+
+
+
+
+
+
