@@ -78,7 +78,7 @@ $(document).ready(function() {
                 var userAnswer = $('input[type=radio]:checked').val();
                 var correctAnswer = questions[questionNum].correct;
                 //checks the answer and moves to the next question
-                if (userAnswer == null) {
+                if (userAnswer === null ) {
                     $('.feedback').text('You need to choose something...')
                 } else if (userAnswer == correctAnswer) {
                     $('.feedback').text('Correct !');
@@ -87,14 +87,14 @@ $(document).ready(function() {
                     numCorrect++
                     question()
                 } else {
-                    $('.user_feedback').text('Wrong, the correct answer is' + questions[questionNum].asnwers[correctAnswer])
+                    $('.feedback').text('Wrong, the correct answer is' + questions[questionNum].answers[correctAnswer]);
                     removeAnswers()
                     questionNum++
-                    currentNumbers()
+                    // currentNumbers()
                     question()
                 };
                 console.log('submit clicked');
                 console.log('userAnswer is ' +userAnswer);
-                return false;
+                return false;   
             })
         });
