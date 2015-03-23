@@ -65,6 +65,7 @@ $(document).ready(function() {
                 $('.answerform').hide();
                 $('.current-number').hide();
                 $('.feedback').text(" You got  " + numCorrect + " out of " + questions.length);
+                $('.feedback').css('maxWidth','300px').css('padding','10px').css('backgroundColor','cyan');
             }
 
             /* display number corrrect and total questions  */
@@ -81,13 +82,13 @@ $(document).ready(function() {
                 if (userAnswer == null ) {
                     $('.feedback').text('You need to choose something...').css('backgroundColor','pink').css('maxWidth','300px').css('padding','10px');
                 } else if (userAnswer == correctAnswer) {
-                    $('.feedback').text('Correct !').css('backgroundColor','green').css('maxWidth','300px').css('padding','10px').css('color','white');
+                    $('.feedback').text('Correct !').css('backgroundColor','green').css('maxWidth','300px').css('padding','10px').css('color','black');
                     removeAnswers()
                     questionNum++
                     numCorrect++
                     question()
                 } else {
-                    $('.feedback').text('Wrong, the correct answer is ' + questions[questionNum].answers[correctAnswer]).css('backgroundColor','yellow').css('maxWidth','300px').css('padding','10px');
+                    $('.feedback').text('Wrong, the correct answer is ' + questions[questionNum].answers[correctAnswer]).css('backgroundColor','red').css('maxWidth','300px').css('padding','10px').css('color','black');    
                     removeAnswers()
                     questionNum++
                     // currentNumbers()
